@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <div
@@ -98,23 +96,17 @@ export default function Hero() {
           justifyContent: "center",
         }}
       >
-        <div
+        <img
+          src="/images/screenshots/home_in_frame.png"
+          alt="EasyDibs app home screen"
           style={{
-            position: "relative",
-            width: "600px",
-            height: "1200px",
+            width: "270px",
+            height: "580px",
+            objectFit: "cover",
+            borderRadius: "2.2rem",
             transform: "rotate(5deg) translateY(15%)",
           }}
-        >
-          <Image
-            src="/images/screenshots/home_in_frame.png"
-            alt="EasyDibs app home screen"
-            fill
-            style={{ objectFit: "contain" }}
-            sizes="600px"
-            priority
-          />
-        </div>
+        />
       </div>
     </div>
   );
