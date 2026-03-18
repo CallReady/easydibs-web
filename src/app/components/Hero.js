@@ -3,7 +3,7 @@ export default function Hero() {
     <div
       style={{
         background: "linear-gradient(to right, #1F1D1B, #3A3632)",
-        minHeight: "80vh",
+        minHeight: "90vh",
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
@@ -92,22 +92,34 @@ export default function Hero() {
         style={{
           flex: 1,
           position: "relative",
-          display: "flex",
-          alignItems: "flex-start",
-          justifyContent: "center",
+          height: "90vh",
           overflow: "visible",
         }}
       >
-        <img
-          src="/images/screenshots/home_in_frame.png"
-          alt="EasyDibs app home screen"
+        <div
           style={{
-            width: "420px",
-            height: "860px",
-            objectFit: "contain",
-            transform: "rotate(12deg) translateY(20%)",
+            position: "absolute",
+            top: "40px",
+            left: "50%",
+            transform: "translateX(-50%) rotate(8deg)",
+            width: "380px",
+            height: "780px",
+            borderRadius: "40px",
+            background: "#111",
+            border: "2px solid #333",
+            overflow: "hidden",
           }}
-        />
+        >
+          <img
+            src="/images/screenshots/home_in_frame.png"
+            alt="EasyDibs app home screen"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+            }}
+          />
+        </div>
       </div>
     </div>
   );
