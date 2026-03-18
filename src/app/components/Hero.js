@@ -88,7 +88,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right column — phone mockup */}
+      {/* Right column — phone image */}
       <div
         style={{
           flex: 1,
@@ -97,57 +97,15 @@ export default function Hero() {
           justifyContent: "center",
         }}
       >
-        <div
-          style={{
-            position: "relative",
-            display: "flex",
-            flexDirection: "column",
-            width: "270px",
-            height: "580px",
-            background: "#111111",
-            border: "2px solid rgba(255,255,255,0.15)",
-            borderRadius: "2.8rem",
-            overflow: "hidden",
-            boxShadow: "0 25px 50px rgba(0,0,0,0.4)",
-          }}
-        >
-          {/* Notch */}
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "12px",
-              paddingBottom: "4px",
-            }}
-          >
-            <div
-              style={{
-                width: "80px",
-                height: "20px",
-                background: "#000000",
-                borderRadius: "9999px",
-              }}
-            />
-          </div>
-          {/* Screen */}
-          <div
-            style={{
-              position: "relative",
-              flex: 1,
-              margin: "0 12px 12px 12px",
-              borderRadius: "2.2rem",
-              overflow: "hidden",
-            }}
-          >
-            <Image
-              src="/images/screenshots/home_in_frame.png"
-              alt="EasyDibs app home screen"
-              fill
-              style={{ objectFit: "cover", objectPosition: "top" }}
-              sizes="270px"
-              priority
-            />
-          </div>
+        <div style={{ position: "relative", width: "270px", height: "580px" }}>
+          <Image
+            src="/images/screenshots/home_in_frame.png"
+            alt="EasyDibs app home screen"
+            fill
+            style={{ objectFit: "contain" }}
+            sizes="270px"
+            priority
+          />
         </div>
       </div>
     </div>
