@@ -3,9 +3,30 @@ import logo from "@/assets/logos/logo.png";
 
 export default function Nav() {
   return (
-    <nav className="sticky top-0 z-50 w-full bg-[#1F1D1B] px-6 py-4 flex items-center justify-between">
-      <Image src={logo} alt="EasyDibs" height={40} width={150} className="h-10 w-auto" />
-      <a href="#download" className="font-nunito text-white text-sm">
+    <nav
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: "100%",
+        backgroundColor: "#1F1D1B",
+        padding: "16px 40px",
+        position: "sticky",
+        top: 0,
+        zIndex: 50,
+      }}
+    >
+      <Image src={logo} alt="EasyDibs" height={40} width={150} style={{ height: "40px", width: "auto" }} />
+      <a
+        href="#download"
+        style={{
+          color: "#FFFFFF",
+          textDecoration: "none",
+          fontSize: "0.875rem",
+          fontFamily: "var(--font-nunito), sans-serif",
+        }}
+      >
         Download
       </a>
     </nav>
