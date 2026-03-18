@@ -91,23 +91,20 @@ export default function Hero() {
       <div
         style={{
           flex: 1,
-          position: "relative",
-          height: "90vh",
-          overflow: "visible",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <div
           style={{
-            position: "absolute",
-            top: "40px",
-            left: "50%",
-            transform: "translateX(-50%) rotate(8deg)",
-            width: "380px",
-            height: "780px",
+            width: "300px",
+            height: "620px",
             borderRadius: "40px",
-            background: "#111",
+            background: "transparent",
             border: "2px solid #333",
             overflow: "hidden",
+            transform: "rotate(8deg)",
           }}
         >
           <img
@@ -116,7 +113,8 @@ export default function Hero() {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "contain",
+              objectFit: "cover",
+              borderRadius: "36px",
             }}
           />
         </div>
