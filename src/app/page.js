@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-bg-screen">
+    <div style={{ minHeight: "100vh", background: "#F2F0EC" }}>
       <Nav />
       <Hero />
     </div>
