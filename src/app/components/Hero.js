@@ -91,20 +91,21 @@ export default function Hero() {
       <div
         style={{
           flex: 1,
+          position: "relative",
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "center",
+          overflow: "visible",
         }}
       >
         <img
           src="/images/screenshots/home_in_frame.png"
           alt="EasyDibs app home screen"
           style={{
-            width: "270px",
-            height: "580px",
-            objectFit: "cover",
-            borderRadius: "2.2rem",
-            transform: "rotate(5deg) translateY(15%)",
+            width: "420px",
+            height: "860px",
+            objectFit: "contain",
+            transform: "rotate(12deg) translateY(20%)",
           }}
         />
       </div>
