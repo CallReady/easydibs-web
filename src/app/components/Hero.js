@@ -101,8 +101,8 @@ export default function Hero() {
         <div
           style={{
             position: "relative",
-            width: "380px",
-            height: "800px",
+            width: "600px",
+            height: "1200px",
             transform: "rotate(5deg) translateY(15%)",
           }}
         >
@@ -111,7 +111,7 @@ export default function Hero() {
             alt="EasyDibs app home screen"
             fill
             style={{ objectFit: "contain" }}
-            sizes="380px"
+            sizes="600px"
             priority
           />
         </div>
