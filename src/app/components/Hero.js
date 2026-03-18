@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#1F1D1B] to-[#3A3632]">
-      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 px-6 py-16 md:py-24">
+    <section className="w-full bg-gradient-to-r from-[#1F1D1B] to-[#3A3632] min-h-[80vh]">
+      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 px-6 py-16 md:py-24 min-h-[80vh]">
         {/* Left column */}
-        <div className="flex flex-col justify-center text-center md:text-left">
-          <p className="font-nunito text-xs uppercase tracking-[0.2em] text-[#888780] mb-5">
+        <div className="flex flex-col justify-center text-left">
+          <p className="font-nunito text-xs uppercase tracking-[0.2em] text-white opacity-70 mb-5">
             for roommates and households
           </p>
           <h1 className="font-nunito font-extrabold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
@@ -14,11 +14,11 @@ export default function Hero() {
             <br />
             Just dibs.
           </h1>
-          <p className="font-nunito text-lg md:text-xl text-white/60 mb-10 max-w-lg mx-auto md:mx-0">
+          <p className="font-nunito text-lg md:text-xl text-white opacity-70 mb-10 max-w-lg">
             Claim a space without starting a conversation. Everyone sees it.
             Nobody has to ask.
           </p>
-          <div className="flex flex-row gap-4 justify-center md:justify-start">
+          <div className="flex flex-row gap-4 justify-start">
             <button className="font-nunito text-sm text-white border border-white/30 rounded-full px-6 py-3 hover:bg-white/10 transition-colors">
               App Store
             </button>
