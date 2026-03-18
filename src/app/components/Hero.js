@@ -11,6 +11,7 @@ export default function Hero() {
         alignItems: "center",
         padding: "80px 60px",
         gap: "60px",
+        overflow: "hidden",
       }}
     >
       {/* Left column */}
@@ -88,22 +89,29 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Right column — phone image */}
+      {/* Right column — phone image, tilted and cropped */}
       <div
         style={{
           flex: 1,
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "center",
         }}
       >
-        <div style={{ position: "relative", width: "270px", height: "580px" }}>
+        <div
+          style={{
+            position: "relative",
+            width: "380px",
+            height: "800px",
+            transform: "rotate(5deg) translateY(15%)",
+          }}
+        >
           <Image
             src="/images/screenshots/home_in_frame.png"
             alt="EasyDibs app home screen"
             fill
             style={{ objectFit: "contain" }}
-            sizes="270px"
+            sizes="380px"
             priority
           />
         </div>
