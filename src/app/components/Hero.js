@@ -1,189 +1,192 @@
 export default function Hero() {
   return (
-    <div style={{ position: "relative", overflow: "hidden" }}>
-      {/* Dark hero top */}
+    <div style={{ position: "relative", fontFamily: "var(--font-nunito), sans-serif" }}>
+      {/* Dark hero background with rounded bottom */}
       <div
         style={{
           background: "#1F1D1B",
-          padding: "60px 60px 180px 60px",
+          borderRadius: "0 0 32px 32px",
+          padding: "48px 40px 160px 40px",
           position: "relative",
+          overflow: "hidden",
         }}
       >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "flex-start",
-            gap: "40px",
-          }}
-        >
-          {/* Left content */}
-          <div style={{ flex: 1, paddingTop: "20px" }}>
-            <h1
-              style={{
-                color: "#FFFFFF",
-                fontSize: "3.5rem",
-                fontWeight: 800,
-                lineHeight: 1.1,
-                marginBottom: "20px",
-                fontFamily: "var(--font-nunito), sans-serif",
-              }}
-            >
-              Call dibs on
-              <br />
-              your space.
-            </h1>
-            <p
-              style={{
-                color: "#FFFFFF",
-                fontSize: "1rem",
-                opacity: 0.7,
-                marginBottom: "28px",
-                fontFamily: "var(--font-nunito), sans-serif",
-              }}
-            >
-              Hey John, manage shared spaces with ease.
-            </p>
-            <button
-              style={{
-                backgroundColor: "#FFFFFF",
-                color: "#1F1D1B",
-                fontSize: "1rem",
-                fontWeight: 700,
-                border: "none",
-                borderRadius: "12px",
-                padding: "14px 32px",
-                cursor: "pointer",
-                fontFamily: "var(--font-nunito), sans-serif",
-                marginBottom: "12px",
-              }}
-            >
-              Get Started
-            </button>
-            <p
-              style={{
-                color: "#FFFFFF",
-                fontSize: "0.8rem",
-                opacity: 0.5,
-                fontFamily: "var(--font-nunito), sans-serif",
-                marginBottom: "32px",
-              }}
-            >
-              Free &amp; Easy to Use
-            </p>
-            {/* Colored dots */}
-            <div style={{ display: "flex", gap: "8px", marginBottom: "24px" }}>
-              <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#E5484D" }} />
-              <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#D4A017" }} />
-              <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#2A7A4A" }} />
-              <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "#1a5c35" }} />
-            </div>
-            <p
-              style={{
-                color: "#1A1A18",
-                fontSize: "0.95rem",
-                fontWeight: 700,
-                fontFamily: "var(--font-nunito), sans-serif",
-              }}
-            >
-              Trusted by thousands of users
-            </p>
-          </div>
-
-          {/* Right — phone mockup overlapping */}
-          <div
+        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative" }}>
+          {/* Headline */}
+          <h1
             style={{
-              flex: 1,
-              display: "flex",
-              justifyContent: "center",
-              position: "relative",
-              minHeight: "500px",
+              color: "#FFFFFF",
+              fontSize: "3rem",
+              fontWeight: 800,
+              lineHeight: 1.08,
+              marginBottom: "16px",
+              maxWidth: "400px",
             }}
           >
-            <img
-              src="/images/screenshots/home_in_frame.png"
-              alt="EasyDibs app home screen"
-              style={{
-                position: "absolute",
-                top: "0",
-                width: "300px",
-                height: "auto",
-                transform: "rotate(2deg)",
-                zIndex: 10,
-                filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.3))",
-              }}
-            />
-          </div>
+            Call dibs on
+            <br />
+            your space.
+          </h1>
+
+          {/* Subtitle */}
+          <p
+            style={{
+              color: "rgba(255,255,255,0.65)",
+              fontSize: "0.95rem",
+              marginBottom: "24px",
+            }}
+          >
+            Hey John, manage shared spaces with ease.
+          </p>
+
+          {/* Get Started button */}
+          <button
+            style={{
+              background: "#FFFFFF",
+              color: "#1F1D1B",
+              fontSize: "0.95rem",
+              fontWeight: 700,
+              fontFamily: "var(--font-nunito), sans-serif",
+              border: "none",
+              borderRadius: "14px",
+              padding: "14px 28px",
+              cursor: "pointer",
+              marginBottom: "10px",
+              display: "block",
+            }}
+          >
+            Get Started
+          </button>
+
+          {/* Free & Easy */}
+          <p
+            style={{
+              color: "rgba(255,255,255,0.45)",
+              fontSize: "0.75rem",
+            }}
+          >
+            Free &amp; Easy to Use
+          </p>
+
+          {/* Character illustration placeholder */}
+          <img
+            src="/images/guy.png"
+            alt="Person holding phone"
+            style={{
+              position: "absolute",
+              top: "-20px",
+              right: "0",
+              width: "220px",
+              height: "auto",
+            }}
+          />
         </div>
       </div>
 
-      {/* Light section underneath — the hero bg transitions here */}
+      {/* Middle zone — dots, trust line, and phone overlap */}
       <div
         style={{
-          background: "#F2F0EC",
-          padding: "120px 60px 60px 60px",
-          borderTopLeftRadius: "40px",
-          borderTopRightRadius: "40px",
-          marginTop: "-120px",
+          maxWidth: "900px",
+          margin: "0 auto",
+          padding: "28px 40px 0 40px",
           position: "relative",
-          zIndex: 1,
         }}
       >
+        {/* Phone mockup — overlapping hero and this section */}
         <div
           style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
+            position: "absolute",
+            top: "-260px",
+            right: "40px",
+            zIndex: 20,
           }}
         >
-          {/* Features */}
-          <div
+          <img
+            src="/images/screenshots/home_in_frame.png"
+            alt="EasyDibs app home screen"
             style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "20px",
-              maxWidth: "480px",
+              width: "260px",
+              height: "auto",
+              filter: "drop-shadow(0 12px 32px rgba(0,0,0,0.18))",
             }}
-          >
-            {/* Claim Spaces */}
-            <div style={featureCardStyle}>
-              <div style={{ ...iconCircleStyle, background: "#F0F7F3" }}>
-                <span style={{ fontSize: "1.2rem" }}>&#10003;</span>
-              </div>
-              <div>
-                <p style={featureTitleStyle}>Claim Spaces</p>
-                <p style={featureDescStyle}>
-                  Easily reserve spaces when you need them.
-                </p>
-              </div>
-            </div>
+          />
+        </div>
 
-            {/* Avoid Conflicts */}
-            <div style={featureCardStyle}>
-              <div style={{ ...iconCircleStyle, background: "#FEF9EC" }}>
-                <span style={{ fontSize: "1.2rem", color: "#D4A017" }}>&#9888;</span>
-              </div>
-              <div>
-                <p style={featureTitleStyle}>Avoid Conflicts</p>
-                <p style={featureDescStyle}>
-                  Prevent double-booking and space squabbles.
-                </p>
-              </div>
-            </div>
+        {/* Colored dots */}
+        <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
+          <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "#D94A4A" }} />
+          <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "#D4A017" }} />
+          <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "#4CAF50" }} />
+          <div style={{ width: "18px", height: "18px", borderRadius: "50%", background: "#2A7A4A" }} />
+        </div>
 
-            {/* Stay Organized */}
-            <div style={featureCardStyle}>
-              <div style={{ ...iconCircleStyle, background: "#FEF0F0" }}>
-                <span style={{ fontSize: "1.2rem", color: "#E5484D" }}>&#128197;</span>
-              </div>
-              <div>
-                <p style={featureTitleStyle}>Stay Organized</p>
-                <p style={featureDescStyle}>
-                  Keep track of who&apos;s using what and when.
-                </p>
-              </div>
-            </div>
+        {/* Trust line */}
+        <p
+          style={{
+            color: "#1A1A18",
+            fontSize: "0.95rem",
+            fontWeight: 700,
+            marginBottom: "32px",
+          }}
+        >
+          Trusted by thousands of users
+        </p>
+      </div>
+
+      {/* Feature cards */}
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+          padding: "0 40px 60px 40px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "16px",
+          maxWidth: "460px",
+          marginLeft: "40px",
+        }}
+      >
+        {/* Claim Spaces */}
+        <div style={cardStyle}>
+          <div style={{ ...iconStyle, background: "#F0F7F3", color: "#2A7A4A" }}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="10" fill="#2A7A4A" />
+              <path d="M6 10l3 3 5-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <p style={cardTitleStyle}>Claim Spaces</p>
+            <p style={cardDescStyle}>Easily reserve spaces when you need them.</p>
+          </div>
+        </div>
+
+        {/* Avoid Conflicts */}
+        <div style={cardStyle}>
+          <div style={{ ...iconStyle, background: "#FEF9EC", color: "#D4A017" }}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2L1 18h18L10 2z" fill="#D4A017" />
+              <text x="10" y="16" textAnchor="middle" fill="#fff" fontSize="12" fontWeight="bold">!</text>
+            </svg>
+          </div>
+          <div>
+            <p style={cardTitleStyle}>Avoid Conflicts</p>
+            <p style={cardDescStyle}>Prevent double-booking and space squabbles.</p>
+          </div>
+        </div>
+
+        {/* Stay Organized */}
+        <div style={cardStyle}>
+          <div style={{ ...iconStyle, background: "#FEF0F0", color: "#E5484D" }}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="1" y="3" width="18" height="15" rx="3" fill="#E5484D" />
+              <rect x="1" y="3" width="18" height="5" rx="3" fill="#C0393D" />
+              <rect x="5" y="11" width="4" height="3" rx="1" fill="#fff" />
+              <rect x="11" y="11" width="4" height="3" rx="1" fill="#fff" />
+            </svg>
+          </div>
+          <div>
+            <p style={cardTitleStyle}>Stay Organized</p>
+            <p style={cardDescStyle}>Keep track of who&apos;s using what and when.</p>
           </div>
         </div>
       </div>
@@ -191,20 +194,19 @@ export default function Hero() {
   );
 }
 
-const featureCardStyle = {
+const cardStyle = {
   display: "flex",
-  flexDirection: "row",
   alignItems: "center",
   gap: "16px",
   background: "#FFFFFF",
   borderRadius: "16px",
-  padding: "20px 24px",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+  padding: "18px 20px",
+  boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
 };
 
-const iconCircleStyle = {
-  width: "44px",
-  height: "44px",
+const iconStyle = {
+  width: "42px",
+  height: "42px",
   borderRadius: "12px",
   display: "flex",
   alignItems: "center",
@@ -212,17 +214,17 @@ const iconCircleStyle = {
   flexShrink: 0,
 };
 
-const featureTitleStyle = {
-  fontSize: "1rem",
+const cardTitleStyle = {
+  fontSize: "0.95rem",
   fontWeight: 700,
   color: "#1A1A18",
-  marginBottom: "4px",
+  marginBottom: "2px",
   fontFamily: "var(--font-nunito), sans-serif",
 };
 
-const featureDescStyle = {
-  fontSize: "0.85rem",
+const cardDescStyle = {
+  fontSize: "0.8rem",
   color: "#888780",
-  fontFamily: "var(--font-nunito), sans-serif",
   lineHeight: 1.4,
+  fontFamily: "var(--font-nunito), sans-serif",
 };
