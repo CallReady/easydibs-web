@@ -27,13 +27,13 @@ export default function Hero() {
 
         {/* Right column — phone mockup */}
         <div className="flex-1 flex justify-center">
-          <div className="relative w-[270px] h-[580px] bg-[#111] border-2 border-white/15 rounded-[2.8rem] shadow-2xl overflow-hidden">
+          <div className="relative flex flex-col w-[270px] h-[580px] bg-[#111] border-2 border-white/15 rounded-[2.8rem] shadow-2xl overflow-hidden">
             {/* Status bar / notch */}
             <div className="flex justify-center pt-3 pb-1">
               <div className="w-20 h-5 bg-black rounded-full" />
             </div>
             {/* Screen area */}
-            <div className="absolute inset-3 top-10 rounded-[2.2rem] overflow-hidden">
+            <div className="relative mx-3 mb-3 flex-1 rounded-[2.2rem] overflow-hidden">
               <Image
                 src="/images/screenshots/home.png"
                 alt="EasyDibs app home screen"
