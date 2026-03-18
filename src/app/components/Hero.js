@@ -140,7 +140,7 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/images/screenshots/home.png"
+              src="/images/screenshots/home_in_frame.png"
               alt="EasyDibs app home screen"
               fill
               style={{ objectFit: "cover", objectPosition: "top" }}
